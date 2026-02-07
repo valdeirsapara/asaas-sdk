@@ -5,7 +5,7 @@ SDK Python completo para a API v3 da plataforma de pagamentos [Asaas](https://ww
 ## Instalação
 
 ```bash
-pip install asaas-sdk
+pip install asaas
 ```
 
 Ou instale a partir do código fonte:
