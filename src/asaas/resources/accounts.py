@@ -51,10 +51,7 @@ class Accounts(Resource):
         postal_code: str | None = None,
         site: str | None = None,
         income_value: float | None = None,
-        income_range: str | None = None,
-        responsible_name: str | None = None,
-        responsible_cpf: str | None = None,
-        responsible_birth_date: str | None = None,
+        birth_date: str | None = None,
         webhooks: list[dict[str, Any]] | None = None,
     ) -> dict[str, Any]:
         """Create a new subaccount.
@@ -74,10 +71,7 @@ class Accounts(Resource):
             postal_code: Postal code (CEP).
             site: Website URL.
             income_value: Monthly income value.
-            income_range: Income range identifier.
-            responsible_name: Name of the responsible person.
-            responsible_cpf: CPF of the responsible person.
-            responsible_birth_date: Birth date of the responsible person (YYYY-MM-DD).
+            birth_date: Birth date (YYYY-MM-DD).
             webhooks: List of webhook configurations.
 
         Returns:
@@ -96,10 +90,7 @@ class Accounts(Resource):
         _set(payload, "postalCode", postal_code)
         _set(payload, "site", site)
         _set(payload, "incomeValue", income_value)
-        _set(payload, "incomeRange", income_range)
-        _set(payload, "responsibleName", responsible_name)
-        _set(payload, "responsibleCpf", responsible_cpf)
-        _set(payload, "responsibleBirthDate", responsible_birth_date)
+        _set(payload, "birthDate", birth_date)
         _set(payload, "webhooks", webhooks)
         return self._post(self.BASE_PATH, json=payload)
 

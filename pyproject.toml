@@ -3,14 +3,14 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "asaas-sdk"
+name = "asaas"
 version = "1.0.0"
 description = "Python SDK for the Asaas payment platform API v3"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"
 authors = [
-    {name = "Asaas SDK Contributors"},
+    {name = "Valdeir Sapara", email = "valdeirsapara@users.noreply.github.com"},
 ]
 keywords = ["asaas", "payments", "boleto", "pix", "sdk", "api", "brazil"]
 classifiers = [
@@ -42,10 +42,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/asaas/asaas-python-sdk"
+Homepage = "https://github.com/valdeirsapara/asaas-sdk"
 Documentation = "https://docs.asaas.com"
-Repository = "https://github.com/asaas/asaas-python-sdk"
-Issues = "https://github.com/asaas/asaas-python-sdk/issues"
+Repository = "https://github.com/valdeirsapara/asaas-sdk"
+Issues = "https://github.com/valdeirsapara/asaas-sdk/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
